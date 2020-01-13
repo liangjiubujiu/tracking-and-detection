@@ -6,8 +6,9 @@ several preliminary experiments for videl tracking task
 - Linux
 - Python ≥ 3.6
 - Opencv-contrib-python > 4.1.0 recommend
+
 Run tracking.py with:
 
-'''
+```
 python tracker.py --video liuxiang_22s.mp4 --algorithm CSRT
-'''
+```
