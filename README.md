@@ -1,4 +1,5 @@
-## tracking-and-detection
+## Tracking and detection
+
 several preliminary experiments for videl tracking task
 
 # Installation
@@ -7,7 +8,7 @@ several preliminary experiments for videl tracking task
 * Python ≥ 3.6
 * Opencv-contrib-python > 4.1.0 recommend
 
-Run tracking.py with:
+Take CSRT algorithm as an example, run tracking.py with:
 
 ```
 python tracking.py --video tracking.mp4 --algorithm CSRT
