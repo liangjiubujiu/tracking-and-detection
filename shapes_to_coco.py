@@ -10,6 +10,7 @@ import numpy as np
 from pycococreatortools import pycococreatortools
 import time
 import sys
+import shutil
 
 INFO = {
     "description": "Example Dataset",
@@ -20,6 +21,8 @@ INFO = {
     "date_created": datetime.datetime.utcnow().isoformat(' ')
 }
 
+
+#todo make sure that the cat 1 and cat 10 are not conflict if there are more than 10 classes.
 LICENSES = [
     {
         "id": 1,
@@ -30,6 +33,11 @@ LICENSES = [
 
 CATEGORIES = [
     {
+        'id': 0,
+        'name': 'cat0',
+        'supercategory': 'shape',
+    },
+    {
         'id': 1,
         'name': 'cat1',
         'supercategory': 'shape',
@@ -39,7 +47,7 @@ CATEGORIES = [
         'name': 'cat2',
         'supercategory': 'shape',
     },
-    {
+      {
         'id': 3,
         'name': 'cat3',
         'supercategory': 'shape',
@@ -72,11 +80,6 @@ CATEGORIES = [
       {
         'id': 9,
         'name': 'cat9',
-        'supercategory': 'shape',
-    },
-      {
-        'id': 10,
-        'name': 'cat10',
         'supercategory': 'shape',
     },
 ]
@@ -114,9 +117,9 @@ def main():
             "images": [],
             "annotations": []
         }
-
-        image_id = 1
-        segmentation_id = 1
+        # todo  change the idx from 0 to n so that the list append func can be operated
+        image_id = 0
+        segmentation_id = 0
         img_files_path, img_files=get_files_list(IMAGE_DIR,img_dirs)
         img_files_path.sort()
         img_files.sort()
@@ -138,7 +141,7 @@ def main():
 
 
             class_id = [x['id'] for x in CATEGORIES if x['name'] in annotation_filename]
-            category_info = {'id': class_id, 'is_crowd': 'crowd' in image_filename}
+            category_info = {'id': class_id, 'is_crowd': 'crowd' in image_filename}# category_info has two parts id and whether is_crowd
             binary_mask = np.asarray(Image.open(annotation_filename)
                 .convert('1')).astype(np.uint8)
 
@@ -159,3 +162,11 @@ if __name__ == "__main__":
     main()
     time_elapsed=time.time()-since
     print('The code in {} run {:.0f}m {:.0f}s'.format(sys.argv[0][sys.argv[0].rfind(os.sep) + 1:], time_elapsed // 60, time_elapsed % 60))
+    # put the two annotated files to the root path
+    for d in ["train", "val"]:
+        ROOT_DIR = os.getcwd() + '/dataset'
+        shutil.copy(ROOT_DIR +'/'+d+ '/instances_shape_'+d+'2018.json', ROOT_DIR)
+
+
+
+
