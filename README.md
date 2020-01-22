@@ -1,6 +1,6 @@
 # Tracking and detection
 
-several preliminary experiments for videl tracking task
+several preliminary experiments for videl tracking task.
 
 # Tracking
 ## Installation Requirements
@@ -19,17 +19,24 @@ Dataset is from [deep-dental-image](https://github.com/IvisionLab/deep-dental-im
 
 # Detection
 All the preliminary experiments are based on pretrained models and opensource packages.
-# Installation Requirements
-* Cuda 10.1 [guidance 1](https://medium.com/@exesse/cuda-10-1-installation-on-ubuntu-18-04-lts-d04f89287130) [guidance 2](https://oldtang.com/2486.html) [guidance](http://blog.jeffhaluska.com/adventures-in-installing-pytorch-in-ubuntu-18-04/)
-* Facebook [detectron 2](https://github.com/facebookresearch/detectron2)
-*
-* 
-*
--
+## Installation Requirements
+* Cuda 10.1 [guidance 1](https://medium.com/@exesse/cuda-10-1-installation-on-ubuntu-18-04-lts-d04f89287130) [guidance 2](https://oldtang.com/2486.html) [guidance3](http://blog.jeffhaluska.com/adventures-in-installing-pytorch-in-ubuntu-18-04/).
+* Facebook [detectron 2](https://github.com/facebookresearch/detectron2).
+* Git [shape_to_coco](https://github.com/waspinator/pycococreator).
+
   tips:
-  Driver, cuda and pytorch should be matched perfectly. 
+  - Driver, cuda and pytorch should be matched perfectly. 
   ![version](/images/CUDAToolkitDocumentation.png)
-  
+  - Create new conda env to manage this repository.
+```
+conda create -n mypython3 python=3.6
+conda activate mypython3
+conda info --envs
+conda list
+conda deactivate
+```
+## Dataset
+Git [tooth dataset](https://github.com/IvisionLab/deep-dental-image).
   
   
   
