@@ -37,8 +37,4 @@ conda deactivate
 ```
 ## Dataset for Detection
 Contact with [tooth dataset](https://github.com/IvisionLab/deep-dental-image).
-  
-  
-  
-  
 Ps: All therepository is made by the detailed markdown [guidance](https://guides.github.com/features/mastering-markdown/)
