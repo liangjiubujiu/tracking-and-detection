@@ -104,7 +104,7 @@ def get_files_list(root,dirs):
 
 def main():
 
-    for d in ["train", "val"]:
+    for d in ["tooth/train", "tooth/val"]:
         ROOT_DIR = os.getcwd() + '/dataset/' + d
         IMAGE_DIR = os.path.join(ROOT_DIR, "images")
         ANNOTATION_DIR = os.path.join(ROOT_DIR, "annotations")
@@ -163,7 +163,7 @@ if __name__ == "__main__":
     time_elapsed=time.time()-since
     print('The code in {} run {:.0f}m {:.0f}s'.format(sys.argv[0][sys.argv[0].rfind(os.sep) + 1:], time_elapsed // 60, time_elapsed % 60))
     # put the two annotated files to the root path
-    for d in ["train", "val"]:
+    for d in ["tooth/train", "tooth/val"]:
         ROOT_DIR = os.getcwd() + '/dataset'
         shutil.copy(ROOT_DIR +'/'+d+ '/instances_shape_'+d+'2018.json', ROOT_DIR)
 
