@@ -13,7 +13,7 @@ Take CSRT algorithm as an example, run tracking.py with:
 ```
 python tracking.py --video tracking.mp4 --algorithm CSRT
 ```
-## Dataset 
+## Dataset for Tracking 
 Dataset is from [deep-dental-image](https://github.com/IvisionLab/deep-dental-image).
 
 
@@ -35,8 +35,8 @@ conda info --envs
 conda list
 conda deactivate
 ```
-## Dataset
-Git [tooth dataset](https://github.com/IvisionLab/deep-dental-image).
+## Dataset for Detection
+Contact with [tooth dataset](https://github.com/IvisionLab/deep-dental-image).
   
   
   
