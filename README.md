@@ -14,7 +14,7 @@ Take CSRT algorithm as an example, run tracking.py with:
 python tracking.py --video tracking.mp4 --algorithm CSRT
 ```
 ## Dataset for Tracking 
-Dataset is from [deep-dental-image](https://github.com/IvisionLab/deep-dental-image){: height="100px" width="100px"}.
+Dataset is from [deep-dental-image](https://github.com/IvisionLab/deep-dental-image){:  width="100px" height="100px"}.
 
 
 # Detection
