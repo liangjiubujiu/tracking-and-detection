@@ -27,6 +27,7 @@ All the preliminary experiments are based on pretrained models and opensource pa
   tips:
   - Driver, cuda and pytorch should be matched perfectly. 
   ![version](/images/CUDAToolkitDocumentation.png)
+  <img style="width:50px;height:50px" src="./images/CUDAToolkitDocumentation.png">
   - Create new conda env to manage this repository.
 ```
 conda create -n mypython3 python=3.6
