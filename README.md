@@ -57,6 +57,8 @@ Simply use the MASKRCNN pretrained model and [guideance](https://www.dlology.com
 Predited categories and segmentation annotations are not ideal.
 <div align=center><img width="800" height="400" src="./images/Result.png"></div>
 <div align=center><img width="800" height="400" src="./images/Truth.png"></div>
+# Analysis
+- Simply compare the results in this pretrained model and in published paper. They looks very different.
+-- This pretrained model prefer category No.8 in category No. 0~9.
 
-
-Ps: All therepository is made by the detailed markdown [guidance](https://guides.github.com/features/mastering-markdown/)
+- Ps: All therepository is made by the detailed markdown [guidance](https://guides.github.com/features/mastering-markdown/).
