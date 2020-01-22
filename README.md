@@ -26,7 +26,7 @@ All the preliminary experiments are based on pretrained models and opensource pa
 
   tips:
   - Driver, cuda and pytorch should be matched perfectly. 
-<div align=center><img width="500" height="300" src="/images/CUDAToolkitDocumentation.png"></div>
+<div align=center><img width="800" height="400" src="/images/CUDAToolkitDocumentation.png"></div>
   - Create new conda env to manage this repository.
 ```
 conda create -n mypython3 python=3.6
@@ -38,7 +38,7 @@ conda deactivate
 ## Dataset for Detection
 Contact with [UFBA_UESC_DENTAL_IMAGES_DEEP ](https://github.com/IvisionLab/deep-dental-image).
 
-<div align=center><img width="500" height="300" src="./images/Data.png"></div>
+<div align=center><img width="800" height="400" src="./images/Data.png"></div>
 
 ## Start 
 * copy all the .py files to detectron/, rename tooth dataset and put it to detectron/dataset/.
@@ -55,7 +55,7 @@ python shape_to_coco.py
 ## Results 
 Simply use the MASKRCNN pretrained model and [guideance](https://www.dlology.com/blog/how-to-train-detectron2-with-custom-coco-datasets/).
 Predited categories and segmentation annotations are not ideal.
-<div align=center><img width="500" height="300" src="./images/Result.png"></div>
+<div align=center><img width="800" height="400" src="./images/Result.png"></div>
 
 
 
