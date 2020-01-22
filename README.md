@@ -22,7 +22,7 @@ All the preliminary experiments are based on pretrained models and opensource pa
 # Installation Requirements
 * facebook [detectron 2](https://github.com/facebookresearch/detectron2)
   tips:
-  driver, cuda and pytorch version should be matched perfectly.
+  driver, cuda and pytorch [version](/images/CUDA Toolkit Documentation.png) should be matched perfectly. 
   
   
   
