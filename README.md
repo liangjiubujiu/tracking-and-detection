@@ -15,3 +15,6 @@ python tracking.py --video tracking.mp4 --algorithm CSRT
 ```
 # Dataset 
 Dataset is from [deep-dental-image](https://github.com/IvisionLab/deep-dental-image).
+
+
+## Detection
