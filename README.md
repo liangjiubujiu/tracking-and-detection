@@ -50,3 +50,7 @@ python division_train_val.py
 python shape_to_coco.py
 ```
 * run tooth_train.py to train and evaluate the detection performance.
+## Results 
+Simply use the MASKRCNN pretrained model and [guideance](https://www.dlology.com/blog/how-to-train-detectron2-with-custom-coco-datasets/).
+Predited categories and segmentation annotations are not ideal.
+![Resuts](/images/0.jpg)
