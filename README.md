@@ -57,6 +57,7 @@ python shape_to_coco.py
 Simply use the MASKRCNN pretrained model and [guideance](https://www.dlology.com/blog/how-to-train-detectron2-with-custom-coco-datasets/).
 Predited categories and segmentation annotations are not ideal.
 ![Result](/images/Result.png){: height="100" width="100"}.
+<img style="width:10px;height:10px" src="./images/Result.png">
 
 
 
