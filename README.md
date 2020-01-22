@@ -20,9 +20,15 @@ Dataset is from [deep-dental-image](https://github.com/IvisionLab/deep-dental-im
 # Detection
 All the preliminary experiments are based on pretrained models and opensource packages.
 # Installation Requirements
-* facebook [detectron 2](https://github.com/facebookresearch/detectron2)
+* Cuda 10.1 [guidance 1](https://medium.com/@exesse/cuda-10-1-installation-on-ubuntu-18-04-lts-d04f89287130) [guidance 2](https://oldtang.com/2486.html) [guidance](http://blog.jeffhaluska.com/adventures-in-installing-pytorch-in-ubuntu-18-04/)
+* Facebook [detectron 2](https://github.com/facebookresearch/detectron2)
+*
+* 
+*
+-
   tips:
-  driver, cuda and pytorch ![version](/images/CUDAToolkitDocumentation.png) should be matched perfectly. 
+  Driver, cuda and pytorch should be matched perfectly. 
+  ![version](/images/CUDAToolkitDocumentation.png)
   
   
   
