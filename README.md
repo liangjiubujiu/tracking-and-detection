@@ -56,7 +56,7 @@ python shape_to_coco.py
 Simply use the MASKRCNN pretrained model and [guideance](https://www.dlology.com/blog/how-to-train-detectron2-with-custom-coco-datasets/).
 Predited categories and segmentation annotations are not ideal.
 <div align=center><img width="800" height="400" src="./images/Result.png"></div>
-
+<div align=center><img width="800" height="400" src="./images/Truth.png"></div>
 
 
 Ps: All therepository is made by the detailed markdown [guidance](https://guides.github.com/features/mastering-markdown/)
