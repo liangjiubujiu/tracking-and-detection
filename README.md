@@ -38,7 +38,7 @@ conda deactivate
 ## Dataset for Detection
 Contact with [UFBA_UESC_DENTAL_IMAGES_DEEP ](https://github.com/IvisionLab/deep-dental-image).
 
-<img width="100" height="100" src="./images/Data.png">
+<img width="800" height="800" src="./images/Data.png">
 
 ## Start 
 * copy all the .py files to detectron/, rename tooth dataset and put it to detectron/dataset/.
@@ -55,8 +55,7 @@ python shape_to_coco.py
 ## Results 
 Simply use the MASKRCNN pretrained model and [guideance](https://www.dlology.com/blog/how-to-train-detectron2-with-custom-coco-datasets/).
 Predited categories and segmentation annotations are not ideal.
-![Result](/images/Result.png){: height="100" width="100"}.
-<img width="100" height="100" src="./images/Result.png">
+<img width="500" height="500" src="./images/Result.png">
 
 
 
