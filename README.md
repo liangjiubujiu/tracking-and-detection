@@ -22,7 +22,7 @@ All the preliminary experiments are based on pretrained models and opensource pa
 ## Installation Requirements
 * Cuda 10.1 [guidance 1](https://medium.com/@exesse/cuda-10-1-installation-on-ubuntu-18-04-lts-d04f89287130) [guidance 2](https://oldtang.com/2486.html) [guidance3](http://blog.jeffhaluska.com/adventures-in-installing-pytorch-in-ubuntu-18-04/).
 * Facebook [detectron 2](https://github.com/facebookresearch/detectron2).
-* Git [shape_to_coco](https://github.com/waspinator/pycococreator).
+* Git [shape_to_coco](https://github.com/waspinator/pycococreator) to path /detectron2/.
 
   tips:
   - Driver, cuda and pytorch should be matched perfectly. 
@@ -36,5 +36,17 @@ conda list
 conda deactivate
 ```
 ## Dataset for Detection
-Contact with [tooth dataset](https://github.com/IvisionLab/deep-dental-image).
+Contact with [UFBA_UESC_DENTAL_IMAGES_DEEP ](https://github.com/IvisionLab/deep-dental-image).
 Ps: All therepository is made by the detailed markdown [guidance](https://guides.github.com/features/mastering-markdown/)
+## Start 
+* copy all the .py files to detectron/, rename tooth dataset and put it to detectron/dataset/.
+* generate train and val dataset from the original UFBA_UESC_DENTAL_IMAGES_DEEP dataset.
+```
+cd detectron2
+python division_train_val.py
+```
+* generate annotation .json files for train and val datasets seperately. waiting for 15 minutes to generate two json files.
+```
+python shape_to_coco.py
+```
+* run tooth_train.py to train and evaluate the detection performance.
