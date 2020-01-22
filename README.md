@@ -14,7 +14,7 @@ Take CSRT algorithm as an example, run tracking.py with:
 python tracking.py --video tracking.mp4 --algorithm CSRT
 ```
 ## Dataset for Tracking 
-Dataset is from [deep-dental-image](https://github.com/IvisionLab/deep-dental-image){:height="50%" width="50%"}.
+Dataset is from [deep-dental-image](https://github.com/IvisionLab/deep-dental-image){: height="100px" width="100px"}.
 
 
 # Detection
@@ -38,7 +38,7 @@ conda deactivate
 ## Dataset for Detection
 Contact with [UFBA_UESC_DENTAL_IMAGES_DEEP ](https://github.com/IvisionLab/deep-dental-image).
 Ps: All therepository is made by the detailed markdown [guidance](https://guides.github.com/features/mastering-markdown/)
-![Resuts](/images/Data.png){:height="50%" width="50%"}.
+![Resuts](/images/Data.png){:height="100px" width="100px"}.
 
 ## Start 
 * copy all the .py files to detectron/, rename tooth dataset and put it to detectron/dataset/.
@@ -55,7 +55,7 @@ python shape_to_coco.py
 ## Results 
 Simply use the MASKRCNN pretrained model and [guideance](https://www.dlology.com/blog/how-to-train-detectron2-with-custom-coco-datasets/).
 Predited categories and segmentation annotations are not ideal.
-![Result](/images/Result.png){:height="50%" width="50%"}.
+![Result](/images/Result.png){:height="100px" width="100px"}.
 
 
 
