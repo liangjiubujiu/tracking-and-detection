@@ -8,7 +8,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 ### Added
 - Model pretrained codes for the application of detectron2 and tooth dataset.
 - Segmentation and Classification results with many errors are uploaded.
-
+## Questions
+- For each testing sample, the predicted category are all **cat8** since cat8 has the largest partial in the whole dataset.
 ### Todo
 - compare the precision of train and val datasets.
 - compare the visual performance of train and val datasets.
