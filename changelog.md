@@ -13,6 +13,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 ### Todo
 - compare the precision of train and val datasets.
 - compare the visual performance of train and val datasets.
+- Realize detection of category No.7.
 If these compared performances have huge gaps, that means, the pretrained model is severely **overfitting**.  
 Expercted intepretation:  
 Considering that fix the model weights, that is only change the training and evaluated dataset, the focused performance change is related to data strongly. According to experience, complex models with small size and small quantity results in overfitting.
