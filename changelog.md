@@ -27,5 +27,5 @@ Considering that fix the model weights, that is only change the training and eva
   The predicted categories are all **cat9** with accuracy **100%**, however all the sampled ground truth are **cat8**.  
   The predicted categories are all **cat10** with accuracy **100%**, however all the sampled ground truth are **cat9**.  
   But there is no annotaion**cat10**.
-
-
+## Questions
+- When changing the totoal quantity of data, the totoal time is fixed.
