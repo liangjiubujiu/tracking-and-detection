@@ -28,6 +28,7 @@ Considering that fix the model weights, that is only change the training and eva
   ~~The predicted categories are all **cat10** with accuracy **100%**, however all the sampled ground truth are **cat9**.~~  
   ~~But there is no annotaion**cat10**.~~  
   fruits_nuts_metadata = Metadata(thing_classes)
+- Add **maximum supression** to select the bounding box with best confidence.
 ## Questions
 - When changing the totoal quantity of data, the totoal time is fixed.  
 -For each testing sample, the predicted categories are all **cat7**, however **cat6** is the largest partial in the whole dataset.
