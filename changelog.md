@@ -22,11 +22,12 @@ Considering that fix the model weights, that is only change the training and eva
 ## [1.0.0] - 2020-01-22
 ### Added
 - Realize detection for only one category. 
-  The predicted categories are all **cat7** with accuracy **100%**, however all the sampled ground truth are **cat6**.  
-  The predicted categories are all **cat8** with accuracy **100%**, however all the sampled ground truth are **cat7**.  
-  The predicted categories are all **cat9** with accuracy **100%**, however all the sampled ground truth are **cat8**.  
-  The predicted categories are all **cat10** with accuracy **100%**, however all the sampled ground truth are **cat9**.  
-  But there is no annotaion**cat10**.
+  ~~The predicted categories are all **cat7** with accuracy **100%**, however all the sampled ground truth are **cat6**.  ~~
+  ~~The predicted categories are all **cat8** with accuracy **100%**, however all the sampled ground truth are **cat7**.  ~~
+  ~~The predicted categories are all **cat9** with accuracy **100%**, however all the sampled ground truth are **cat8**.  ~~
+  ~~The predicted categories are all **cat10** with accuracy **100%**, however all the sampled ground truth are **cat9**.  ~~
+  ~~But there is no annotaion**cat10**.~~
+  fruits_nuts_metadata = Metadata(thing_classes)
 ## Questions
 - When changing the totoal quantity of data, the totoal time is fixed.  
 -For each testing sample, the predicted categories are all **cat7**, however **cat6** is the largest partial in the whole dataset.
