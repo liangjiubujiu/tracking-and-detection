@@ -34,3 +34,5 @@ Considering that fix the model weights, that is only change the training and eva
 -~~For each testing sample, the predicted categories are all **cat7**, however **cat6** is the largest partial in the whole dataset.~~  
 - For each testing sample, the predicted categories are all **cat7**, however **cat7** is the largest partial in the whole dataset.
 todo solve unbalanced samples.
+
+loss function weight : add classification weight and **cat7** weight.
