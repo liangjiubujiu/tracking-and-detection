@@ -19,7 +19,7 @@ If these compared performances have huge gaps, that means, the pretrained model 
 Expercted intepretation:  
 Considering that fix the model weights, that is only change the training and evaluated dataset, the focused performance change is related to data strongly. According to experience, complex models with small size and small quantity results in overfitting.
 
-## [1.0.0] - 2020-01-22
+## [1.0.0] - 2020-02-03
 ### Added
 - Realize detection for only one category. 
   ~~The predicted categories are all **cat7** with accuracy **100%**, however all the sampled ground truth are **cat6**.~~  
@@ -36,3 +36,8 @@ Considering that fix the model weights, that is only change the training and eva
 todo solve unbalanced samples.
 
 loss function weight : add classification weight and **cat7** weight.
+## [1.0.0] - 2020-02-04
+### Added
+- Divided the whole task into subtask classification and detection.   
+  For classification, using resnet 50 pretrained model to complete classification.
+  Results shows overfitting phenomenon. That means, the training accuray is 95% with testing accuracy 77%. 
