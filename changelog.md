@@ -32,22 +32,21 @@ Considering that fix the model weights, that is only change the training and eva
   ~~**add find_max function when plot results.**~~
 ## Questions
 - When changing the totoal quantity of data, the totoal time is fixed.  
--~~For each testing sample, the predicted categories are all **cat7**, however **cat6** is the largest partial in the whole dataset.~~   
+~~- For each testing sample, the predicted categories are all **cat7**, however **cat6** is the largest partial in the whole dataset.~~   
  ~~**add find_max function when plot results.**~~
-- ~~For each testing sample, the predicted categories are all **cat7**, however **cat7** is the largest partial in the whole dataset.~~
+~~- For each testing sample, the predicted categories are all **cat7**, however **cat7** is the largest partial in the whole dataset.~~
  ~~**todo solve unbalanced samples.**~~
  **loss function weight : add classification weight and cat7 weight.**
 ## [1.0.0] - 2020-02-04
 ### Added
-- Divided the whole task into subtask classification and detection.   
-  For classification, using resnet 50 pretrained model to complete classification.
-  Results shows overfitting phenomenon. That means, the training accuray is 95% with testing accuracy 77%.  **Wrong results** 
+~~- Divided the whole task into subtask classification and detection.~~   
+  ~~For classification, using resnet 50 pretrained model to complete classification.~~
+  ~~Results shows overfitting phenomenon. That means, the training accuray is 95% with testing accuracy 77%.  **Wrong results**~~ 
   
  ## [1.0.0] - 2020-02-06
 ### Added
-- Parallelly train models on two 2070 super.    
-  Attention the initial data and output gradients will be allocated in gpu:0.   
-  The model will be saved as parallel models which can not be loaded in a normal model. So for end to end training and testing, save operation will be avoided.
+~~- Parallelly train models on two 2070 super.    
+  **Attention the initial data and output gradients will be allocated in gpu:0.   
+  The model will be saved as parallel models which can not be loaded in a normal model. So for end to end training and testing, save operation will be avoided.**  ~~
 
-  For classification, using resnet 50 pretrained model to complete classification.
-  Results shows overfitting phenomenon. That means, the training accuray is 95% with testing accuracy 77%. 
+Found another bug about input label for resnet 50. datasets.ImageFolder(**input_path + 'train/images'**, data_transforms['train']), ranter than input_path + 'train'
