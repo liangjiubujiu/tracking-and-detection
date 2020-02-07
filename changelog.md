@@ -41,12 +41,16 @@ Considering that fix the model weights, that is only change the training and eva
 ### Added
 ~~- Divided the whole task into subtask classification and detection.~~   
   ~~For classification, using resnet 50 pretrained model to complete classification.~~
-  ~~Results shows overfitting phenomenon. That means, the training accuray is 95% with testing accuracy 77%.  **Wrong results**~~ 
+  ~~Results shows overfitting phenomenon. That means, the training accuray is 95% with testing accuracy 77%.  **Wrong results**~~  
+  ~~The added layer should be on .cuda() at defination: net.fc = nn.Linear(fc_features, 10).cuda()~~  
   
- ## [1.0.0] - 2020-02-06
+## [1.0.0] - 2020-02-06
 ### Added
-~~- Parallelly train models on two 2070 super.    
-  **Attention the initial data and output gradients will be allocated in gpu:0.   
-  The model will be saved as parallel models which can not be loaded in a normal model. So for end to end training and testing, save operation will be avoided.**  ~~
-
-Found another bug about input label for resnet 50. datasets.ImageFolder(**input_path + 'train/images'**, data_transforms['train']), ranter than input_path + 'train'
+~~- Parallelly train models on two 2070 super.~~    
+  ~~**Attention the initial data and output gradients will be allocated in gpu:0.~~   
+  ~~The model will be saved as parallel models which can not be loaded in a normal model. So for end to end training and testing, save operation will be avoided.**  ~~
+~~- Tired to change batch size, image_resize_size, learning rate,
+  
+## [1.0.0] - 2020-02-07
+### Added
+- Found another bug about input label for resnet 50. datasets.ImageFolder(**input_path + 'train/images'**, data_transforms['train']), ranter than input_path + 'train'
