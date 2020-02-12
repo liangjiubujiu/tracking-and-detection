@@ -61,4 +61,5 @@ Considering that fix the model weights, that is only change the training and eva
 ~~- Generate a reasonable confusion matrix for 10 classification task.~~  
 ![image](https://github.com/liangjiubujiu/tracking-and-detection/blob/master/images/confusion_matrix.jpg)
 - Analyse it that the pretrained weight is suitable as a backbone of MaskRCNN. 
+- Collect and recognise all the code files.
 
