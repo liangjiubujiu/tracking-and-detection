@@ -48,9 +48,13 @@ Considering that fix the model weights, that is only change the training and eva
 ### Added
 ~~- Parallelly train models on two 2070 super.~~    
   ~~**Attention the initial data and output gradients will be allocated in gpu:0.~~   
-  ~~The model will be saved as parallel models which can not be loaded in a normal model. So for end to end training and testing, save operation will be avoided.**  ~~
+  ~~The model will be saved as parallel models which can not be loaded in a normal model. So for end to end training and testing, save operation will be avoided.**~~
 ~~- Tired to change batch size, image_resize_size, learning rate,
   
 ## [1.0.0] - 2020-02-07
 ### Added
-- Found another bug about input label for resnet 50. datasets.ImageFolder(**input_path + 'train/images'**, data_transforms['train']), ranter than input_path + 'train'
+- Found another bug about input label for resnet 50. datasets.ImageFolder(**input_path + 'train/images'**, data_transforms['train']), ranter than input_path + 'train'   
+
+## [1.0.0] - 2020-02-11   
+- generate a reasonable confusion matrix for 10 classification task.
+![image](http://github.com/itmyhome2013/readme_add_pic/raw/master/images/nongshalie.jpg)
