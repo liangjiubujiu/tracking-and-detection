@@ -53,9 +53,12 @@ Considering that fix the model weights, that is only change the training and eva
   
 ## [1.0.0] - 2020-02-07
 ### Added
-- Found another bug about input label for resnet 50. datasets.ImageFolder(**input_path + 'train/images'**, data_transforms['train']), ranter than input_path + 'train'   
+- Found another bug about input label for resnet 50. datasets.ImageFolder(**input_path + 'train/images'**, data_transforms['train']), ranter than input_path + 'train'.  
+~~- Cut the whole X-ray annotation with attention only on teeth.~~  
+~~- Train the Resnet model again with the tooth_cut_result dataset.~~  
 
 ## [1.0.0] - 2020-02-11   
 ~~- Generate a reasonable confusion matrix for 10 classification task.~~  
 ![image](https://github.com/liangjiubujiu/tracking-and-detection/blob/master/images/confusion_matrix.jpg)
 - Analyse it that the pretrained weight is suitable as a backbone of MaskRCNN. 
+
