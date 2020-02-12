@@ -3,6 +3,7 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
+## The main goal for the project is to find a light model which can finish tooth instance segmentation at real time situation. 
 
 ## [1.0.0] - 2020-01-22
 ### Added
