@@ -52,6 +52,9 @@ python division_train_val.py
 python shape_to_coco.py
 ```
 * run tooth_train.py to train and evaluate the detection performance.
+
+#Update 
+Mask rcnn is not suitable for tooth semantic segmentation since the annotations are coarse and do not support instance segmentation. The network are confused by the shape of teeth. If you are interested in tooth semantic segmentation in panoramic X-ray iamges and CBCT images, please click [here] (https://github.com/liangjiubujiu/stage_1) or find more information in the author's page.
 ## Results 
 Simply use the MASKRCNN pretrained model and [guideance](https://www.dlology.com/blog/how-to-train-detectron2-with-custom-coco-datasets/).
 Predited categories and segmentation annotations are not ideal.
